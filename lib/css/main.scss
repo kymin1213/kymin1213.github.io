@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+$color1:red;
+
+body,html{height:100%;}
+.wrap{height:100%;}
+.container{height:100%;}
+.container:after{display:bloc; content:""; clear:both;}
+.info{position:relative; float:left; width:500px; height:100%;}
+.info:before{content:""; display:block; position:absolute; top:0; left:0; width:100%; height:580px; background-color:#f7444e; z-index:-10;}
+.info:after{content:""; display:block; position:absolute; bottom:0; left:0; width:100%; height:580px; background-color:#f7f8f3; z-index:-20;}
+.info h1{margin:50px 0 0 60px; font-family:"Verdana Bold"; font-size:14px; color:#fff;}
+.info .link{position:absolute; bottom:0; left:0; width:150px; height:737px; background-color:#002c3e; text-align:center;}
+.info .link div{display:inline-block; margin-top:257px;}
+.info .link div a{display:block; width:14px; height:14px; margin:29px auto 0 auto; background:url(../images/browser.gif) no-repeat; text-indent:-9999px;}
+.info .link div a.menu{position:relative; display:inline-block; width:30px; height:22px; margin:0 auto; background:none;} /* 메뉴 */
+.info .link div a.menu span{display:inline-block; position:absolute; left:0; width:30px; height:2px; background-color:#fff;  transition:all .4s;}
+.info .link div a.menu span:nth-child(1){top:0;}
+.info .link div a.menu span:nth-child(2){top:10px;}
+.info .link div a.menu span:nth-child(3){top:20px;}
+.info .link div a.menu span{display:inline-block; position:absolute; top:10px; left:0; width:30px; height:2px; background-color:#fff;}
+.info .link div a.menu:hover span:nth-child(1){-webkit-transform: translateY (10px) rotate (-45deg); transform: translateY(10px) rotate(-45deg);}
+.info .link div a.menu:hover span:nth-child(2){opacity:0;}
+.info .link div a.menu:hover span:nth-child(3){-webkit-transform: translateY (-10px) rotate (45deg); transform: translateY(-10px) rotate(45deg);}
+.info .link div a:nth-child(3){height:15px; background-position:0 -14px;} /* 익스플로러 */
+.info .link div a:nth-child(4){background-position:0 -29px;} /* 사파리 */
+.info .asd{position:absolute; top:290px; left:210px;}
+.info .asd h2{position:relative; padding-top:40px; font-size:50px; color:#fff;}
+.info .asd h2:before{content:""; display:block; position:absolute; top:0; left:0; width:100px; height:3px; background-color:#fff;}
+.info .asd h2:after{content:""; display:block; position:absolute; top:-80px; left:87px; width:141px; height:151px; background:url(../images/4.gif) 0 0 no-repeat; z-index:-10;}
+
+.contents_wrap{float:left; color:$color1;}
